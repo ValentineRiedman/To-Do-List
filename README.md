@@ -7,3 +7,24 @@
 Your project description goes here. What problem did you solve? How did you solve it?
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
+
+Phase 1 
+===
+
+- setup public folder(html, js, jq, css)
+- npm install express/ pg
+- setup server folder
+- setup module folder
+- setup pool file
+- create db
+
+Phase 2 
+===
+
+- add gitignore
+- setup html 
+- add inputs and outputs
+- add button to addNewTask
+- create table to display tasks
+- create database.sql 
