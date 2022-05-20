@@ -37,3 +37,15 @@ Phase 3
 - add uses
 - add globals/port
 - spin up server
+
+Phase 4
+===
+
+- do ajax GET
+- do ajax POST
+
+Phase 5 
+===
+
+
+

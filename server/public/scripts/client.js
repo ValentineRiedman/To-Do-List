@@ -8,6 +8,21 @@ function onReady(){
 
 function addTask(){
     console.log( 'in addTask' );
+    let newTask ={
+        task: $( '#newTask' ).val()
+    }
+    console.log( 'sending:', newTask );
+    $.ajax({
+        method: 'POST',
+        url: '/list',
+        data: newTask
+    }).then( function( response ){
+        console.log( 'back from POST:', response );
+        getList();
+    }).catch( function( err){
+        console.log( err );
+        alert( 'error adding new task');
+    })
 }// end addTask
 
 function getList(){
