@@ -28,3 +28,12 @@ Phase 2
 - add button to addNewTask
 - create table to display tasks
 - create database.sql 
+
+Phase 3 
+===
+
+- setup server.js
+- add requires
+- add uses
+- add globals/port
+- spin up server
