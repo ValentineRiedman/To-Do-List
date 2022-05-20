@@ -22,7 +22,7 @@ Phase 1
 Phase 2 
 ===
 
-- add gitignore
+- add gitignore: node_modules and DS_Store
 - setup html 
 - add inputs and outputs
 - add button to addNewTask
