@@ -42,14 +42,20 @@ function getList(){
         for( let i=0; i< response.length; i++){
             let completedStart = '';
             let completedEnd = '';
+            let uncompletedStart = '';
+            let uncompletedEnd = '';
             if( response[i].completed ){
                 completedStart = '<strong>';
                 completedEnd = '</strong>';
-                el.append(`<li>${ completedStart }${ response[i].task }${ completedEnd } <button class="deleteButton" data-id="${ response[i].id }">Delete</button></li>`);
+                el.append(`<tr><td>${ completedStart } ${ response[i].task } ${ completedEnd }</td>
+                <td><button class="completedTask">Complete</button> </td>
+                <td><button class="deleteButton" data-id="${ response[i].id }">Delete</button></td></tr>`);
             }
             else{
-                el.append(`<li>${ response[i].task} <button class="completeButton" data-id="${ response[i].id }">Complete</button><button class="deleteButton" data-id="${ response[i].id }">Delete</button></li`);
-
+                uncompletedStart = '<em>';
+                uncompletedEnd = '</em>';
+                el.append(`<tr><td><em>${ response[i].task }</em></td> <td> <button class="completeButton" data-id="${ response[i].id }">Complete</button> </td>
+                 <td> <button class="deleteButton" data-id="${ response[i].id }">Delete</button></td></tr>`);
             } 
         }
     }).catch( function( err ){

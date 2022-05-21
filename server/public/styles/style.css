@@ -1,6 +1,65 @@
 strong{
     background-color: greenyellow;
+    text-decoration: line-through;
 }
+
 body{
-    background-color: brown;
+    background-color: rgb(202, 36, 133);
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table, th, td {
+    border: 2px solid;
+    margin-top: 10px;
+    margin-left: 10px;  
+}
+ 
+#outputDiv{
+      text-align: center;
+}
+ 
+.completedTask{
+      opacity: 0%;
+}
+  
+  h1{
+    text-align: center;
+    color:gold;
+}
+
+#inputDiv{
+    margin-left: 10px;
+}
+  
+#newTask{
+      border: 2px solid;
+}
+  
+#addNewTask{
+      border-radius: 45%;      
+}
+
+#addNewTask:hover{
+      background-color: cyan;
+}
+
+.deleteButton:hover{
+    background-color: crimson;
+}
+
+.completeButton:hover{
+    background-color: greenyellow;
+}
+  
+th{
+      background-color: cyan;
+}
+
+td{
+    background-color:coral;
+}
+
+em{
+    background-color: crimson;
 }
