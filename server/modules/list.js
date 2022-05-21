@@ -20,7 +20,19 @@ router.post( '/', ( req, res )=>{
         res.sendStatus( 201 );
     }).catch( ( err )=>{
         console.log( err );
-        req.sendStatus( 500 );
+        res.sendStatus( 500 );
+    })
+})
+
+router.put( '/', ( req, res )=>{
+    console.log( 'in /list PUT', req.query );
+    let queryString = `UPDATE list SET completed=true WHERE id=$1;`;
+    let values = [ req.query.id ];
+    pool.query( queryString, values ).then( ( results )=>{
+        res.sendStatus( 200 );
+    }).catch( ( err )=>{
+        console.log( err );
+        res.sendStatus( 500 );
     })
 })
 

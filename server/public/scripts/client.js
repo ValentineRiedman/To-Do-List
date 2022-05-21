@@ -2,8 +2,9 @@ $( document ).ready( onReady );
 
 function onReady(){
     console.log( 'jq');
-    $( '#addNewTask' ).on( 'click', addTask );
     getList();
+    $( '#addNewTask' ).on( 'click', addTask );
+    $( '#outputDiv').on( 'click', '.completeButton', completeTask );
 }// end onReady
 
 function addTask(){
@@ -35,10 +36,33 @@ function getList(){
         let el = $( '#listOut' );
         el.empty();
         for( let i=0; i< response.length; i++){
-            el.append(`<li>${ response[i].task}`);
+            let completedStart = '';
+            let completedEnd = '';
+            if( response[i].completed ){
+                completedStart = '<strong>';
+                completedEnd = '</strong>';
+                el.append(`<li>${ completedStart }${ response[i].task }${ completedEnd }</li>`);
+            }
+            else{
+                el.append(`<li>${ response[i].task} <button class="completeButton" data-id="${ response[i].id }">Complete</button></li`);
+
+            } 
         }
     }).catch( function( err ){
         console.log( err );
         alert( 'error getting list' );
     })
 }
+
+function completeTask(){
+    console.log( 'in completeTask ', $( this ).data( 'id' ) );
+    $.ajax({
+        method: 'PUT',
+        url: '/list?id=' + $( this ).data( 'id' )
+    }).then( function( response ){
+        console.log( response );
+        getList();
+    }).catch( function( err ){
+        alert( 'error completing task ');
+    })
+}// end completeTask
