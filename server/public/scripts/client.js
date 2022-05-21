@@ -54,7 +54,7 @@ function getList(){
             else{
                 uncompletedStart = '<em>';
                 uncompletedEnd = '</em>';
-                el.append(`<tr><td><em>${ response[i].task }</em></td> <td> <button class="completeButton" data-id="${ response[i].id }">Complete</button> </td>
+                el.append(`<tr><td>${ uncompletedStart }${ response[i].task }${ uncompletedEnd }</td> <td> <button class="completeButton" data-id="${ response[i].id }">Complete</button> </td>
                  <td> <button class="deleteButton" data-id="${ response[i].id }">Delete</button></td></tr>`);
             } 
         }

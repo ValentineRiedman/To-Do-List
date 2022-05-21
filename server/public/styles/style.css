@@ -4,7 +4,7 @@ strong{
 }
 
 body{
-    background-color: rgb(202, 36, 133);
+    background-color: rgb(44, 36, 202);
     margin-left: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -22,10 +22,13 @@ table, th, td {
 .completedTask{
       opacity: 0%;
 }
-  
-  h1{
+
+h1{
     text-align: center;
-    color:gold;
+    color:rgb(242, 255, 0);
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    background-color: rgb(202, 36, 133);
+    margin-top: 1px;
 }
 
 #inputDiv{
@@ -45,7 +48,7 @@ table, th, td {
 }
 
 .deleteButton:hover{
-    background-color: crimson;
+    background-color: rgb(255, 0, 230);
 }
 
 .completeButton:hover{
@@ -61,5 +64,5 @@ td{
 }
 
 em{
-    background-color: crimson;
+    background-color: rgb(255, 0, 230);
 }
