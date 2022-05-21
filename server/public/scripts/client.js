@@ -22,6 +22,8 @@ function addTask(){
     }).then( function( response ){
         console.log( 'back from POST:', response );
         getList();
+        // empty input fields
+        $('#newTask').val('');
     }).catch( function( err){
         console.log( err );
         alert( 'error adding new task');
