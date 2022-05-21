@@ -47,5 +47,15 @@ Phase 4
 Phase 5 
 ===
 
+- do ajax PUT
+- do ajax DELETE
 
+Phase 6
+===
 
+- css styling
+
+Phase 7
+===
+
+- stretch goals

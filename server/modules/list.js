@@ -36,4 +36,16 @@ router.put( '/', ( req, res )=>{
     })
 })
 
+router.delete( '/', ( req, res )=>{
+    console.log(' /list DELETE:', req.query );
+    let queryString = 'DELETE FROM list WHERE id=$1';
+    let values = [ req.query.id ];
+    pool.query( queryString, values ).then( ( results)=>{
+        res.sendStatus( 200 );
+    }).catch( ( err )=>{
+        console.log( err );
+        res.sendStatus( 500 );
+    })
+})
+
 module.exports = router;
