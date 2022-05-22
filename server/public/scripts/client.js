@@ -72,7 +72,7 @@ function completeTask(){
     }).then( function( response ){
         console.log( response );
         getList();
-        alert( 'Look at you go!')
+        //alert( 'Look at you go!')
     }).catch( function( err ){
         alert( 'error completing task ');
     })

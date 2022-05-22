@@ -20,8 +20,16 @@ table, th, td {
 }
  
 .completedTask{
-      opacity: 0%;
+    opacity: 0%;
+    animation: fade 3s linear;
 }
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
 
 h1{
     text-align: center;
@@ -29,6 +37,7 @@ h1{
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
     background-color: rgb(202, 36, 133);
     margin-top: 1px;
+    border: 2px solid;
 }
 
 #inputDiv{

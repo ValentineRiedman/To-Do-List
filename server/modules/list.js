@@ -22,7 +22,7 @@ router.post( '/', ( req, res )=>{
         console.log( err );
         res.sendStatus( 500 );
     })
-})
+})// end POST
 
 router.put( '/', ( req, res )=>{
     console.log( 'in /list PUT', req.query );
@@ -34,7 +34,7 @@ router.put( '/', ( req, res )=>{
         console.log( err );
         res.sendStatus( 500 );
     })
-})
+})// end PUT
 
 router.delete( '/', ( req, res )=>{
     console.log(' /list DELETE:', req.query );
@@ -46,6 +46,6 @@ router.delete( '/', ( req, res )=>{
         console.log( err );
         res.sendStatus( 500 );
     })
-})
+})// end DELETE
 
 module.exports = router;
