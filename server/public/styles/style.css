@@ -1,20 +1,26 @@
 strong{
-    background-color: greenyellow;
+    background-color: rgb(5,255,161);
     text-decoration: line-through;
 }
 
 body{
-    background-color: rgb(44, 36, 202);
+    background-color: rgb(1,205,254);
     margin-left: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 table, th, td {
     border: 2px solid;
     margin-top: 10px;
-    margin-left: 10px;  
+    margin-left: auto;
+    margin-right: auto;  
 }
- 
+
+#taskHead{
+    background-color: rgb(5,255,161);
+}
+
 #outputDiv{
       text-align: center;
 }
@@ -24,24 +30,28 @@ table, th, td {
     animation: fade 3s linear;
 }
 
-
 @keyframes fade {
   0%,100% { opacity: 0 }
   50% { opacity: 1 }
 }
 
+.patOnTheBack{
+    float: right;
+    color:rgb(255,251,150);
+    margin-right: 450px;
+}
 
 h1{
     text-align: center;
-    color:rgb(242, 255, 0);
+    color:rgb(255,251,150);
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
-    background-color: rgb(202, 36, 133);
+    background-color: rgb(255,113,206);
     margin-top: 1px;
     border: 2px solid;
 }
 
 #inputDiv{
-    margin-left: 10px;
+    margin-left: 400px;
 }
   
 #newTask{
@@ -53,25 +63,25 @@ h1{
 }
 
 #addNewTask:hover{
-      background-color: cyan;
+      background-color: rgb(255,251,150);
 }
 
 .deleteButton:hover{
-    background-color: rgb(255, 0, 230);
+    background-color: rgb(255,113,206);
 }
 
 .completeButton:hover{
-    background-color: greenyellow;
+    background-color: rgb(5,255,161);
 }
   
 th{
-      background-color: cyan;
+      background-color: rgb(1,205,254);
 }
 
 td{
-    background-color:coral;
+    background-color:rgb(185,103,255);
 }
 
 em{
-    background-color: rgb(255, 0, 230);
+    background-color: rgb(255,113,206);
 }

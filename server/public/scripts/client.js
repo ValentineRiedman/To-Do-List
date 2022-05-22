@@ -6,7 +6,6 @@ function onReady(){
     $( '#addNewTask' ).on( 'click', addTask );
     $( '#outputDiv').on( 'click', '.completeButton', completeTask );
     $( '#outputDiv').on( 'click', '.deleteButton', deleteTask );
-
 }// end onReady
 
 function addTask(){
@@ -72,6 +71,8 @@ function completeTask(){
     }).then( function( response ){
         console.log( response );
         getList();
+        $(".patOnTheBack").text("Well Done!").fadeIn();
+        $(".patOnTheBack").delay( 2000 ).fadeOut();
         //alert( 'Look at you go!')
     }).catch( function( err ){
         alert( 'error completing task ');
