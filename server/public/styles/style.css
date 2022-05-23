@@ -50,6 +50,12 @@ h1{
     border: 2px solid;
 }
 
+.dark-mode{
+    background-color: rgb(181, 181, 181);
+    color: rgb(0, 0, 0);   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #inputDiv{
     margin-left: 400px;
 }

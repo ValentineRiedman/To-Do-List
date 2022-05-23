@@ -6,6 +6,7 @@ function onReady(){
     $( '#addNewTask' ).on( 'click', addTask );
     $( '#outputDiv').on( 'click', '.completeButton', completeTask );
     $( '#outputDiv').on( 'click', '.deleteButton', deleteTask );
+    $( '#darkButton').on( 'click', darkMode );
 }// end onReady
 
 function addTask(){
@@ -93,3 +94,10 @@ function  deleteTask(){
         alert( 'error deleting list item' );
     })
 }// end deleteTask
+
+
+//thought this would be easier than it is.
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle( "dark-mode" );
+  }// end darkMode
