@@ -27,7 +27,7 @@ table, th, td {
  
 .completedTask{
     opacity: 0%;
-    animation: fade 3s linear;
+    animation: fade 2s linear;
 }
 
 @keyframes fade {
@@ -53,7 +53,7 @@ h1{
 .dark-mode{
     background-color: rgb(102, 102, 102);
     color: rgb(0, 0, 0);   
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif
 }
 
 #inputDiv{
